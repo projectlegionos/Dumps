@@ -1,0 +1,12 @@
+service vendor.qti.hardware.display.errflag.write /vendor/bin/lcderrflagwrite
+    class hal animation
+    user root
+    group root
+    disabled
+    oneshot
+
+on property:vendor.display.errflag.write=1
+   start vendor.qti.hardware.display.errflag.write
+
+on property:vendor.display.errflag.write=0
+   stop vendor.qti.hardware.display.errflag.write
