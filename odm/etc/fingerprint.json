@@ -1,0 +1,52 @@
+[
+    {
+        "brand":"realme",
+        "project":"21732",
+        "name":"default",
+        "product":"RMX3371",
+        "device":"RE54E4L1",
+        "model":"RMX3371",
+        "first_api_level" : "31",
+        "manufacturer":"realme"
+    },
+    {
+        "brand":"realme",
+        "project":"21732",
+        "name":"ru",
+        "product":"RMX3371RU",
+        "device":"RE54E4L1",
+        "model":"RMX3371",
+        "first_api_level" : "31",
+        "manufacturer":"realme"
+    },
+    {
+        "brand":"realme",
+        "project":"21732",
+        "name":"tr",
+        "product":"RMX3371TR",
+        "device":"RE54E4L1",
+        "model":"RMX3371",
+        "first_api_level" : "31",
+        "manufacturer":"realme"
+    },
+    {
+        "brand":"realme",
+        "project":"21732",
+        "name":"t2",
+        "product":"RMX3371T2",
+        "device":"RE54E4L1",
+        "model":"RMX3371",
+        "first_api_level" : "31",
+        "manufacturer":"realme"
+    },
+    {
+        "brand":"realme",
+        "project":"21732",
+        "name":"eea",
+        "product":"RMX3371EEA",
+        "device":"RE54E4L1",
+        "model":"RMX3371",
+        "first_api_level" : "31",
+        "manufacturer":"realme"
+    }
+]
