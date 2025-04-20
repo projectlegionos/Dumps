@@ -1,8 +1,0 @@
-on post-fs
-    start ofm-service
-
-service ofm-service /system_ext/bin/ofm-service
-    disabled
-    user root
-    group root system
-    oneshot
