@@ -1,0 +1,33 @@
+# File: sxrauxd_ext.rc
+#
+# Copyright (c) 2023 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+on post-fs-data
+    mkdir /data/misc/sxraux 0770 system system
+
+service vendor.sxrauxd /system_ext/bin/qxrsplitauxservice
+    disabled
+    class late_start
+    user system
+    group system
+
+on boot && property:ro.boot.product.vendor.sku=kalama
+    start sxrauxd
+
+#on boot && property:ro.boot.product.vendor.sku=taro
+#    start sxrauxd
+
+on boot && property:ro.boot.product.vendor.sku=kona
+    start sxrauxd
+
+#add for waffle space ready certification
+on boot && property:ro.boot.product.vendor.sku=pineapple
+    start sxrauxd
+
+on property:vendor.sxrauxd=enable
+    start vendor.sxrauxd
+
+on property:vendor.sxrauxd=disable
+    stop vendor.sxrauxd
